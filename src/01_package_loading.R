@@ -8,5 +8,4 @@ library(ggrepel)
 library(ggpubr)
 library(viridis)
 library(lubridate)
-library(treemap)
-library(scales) 
+

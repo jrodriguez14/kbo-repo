@@ -70,7 +70,7 @@ ggsave("triples_scatter_facet_teams.png")
 #plot for homeruns
 ggplot(run_type,aes(x=year,y=homeruns))+
   geom_point(aes(color=homeruns))+
-  scale_color_viridis(discrete = F,option = "C",guide=guide_legend(title="Triples"))+
+  scale_color_viridis(discrete = F,option = "C",guide=guide_legend(title="Homeruns"))+
   labs(title = "Total Homeruns",
        subtitle = "by Year",
        x="Year",y="Homeruns")
