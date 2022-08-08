@@ -59,6 +59,8 @@ ggplot(batter_age,aes(x=year,y=average_batter_age))+
   labs(title = "Average Batter Age",
        subtitle = "by Year, by Team",
        x="Year",y="Average Age")+
+  theme(axis.text.x = element_text(size = 8, angle = 60, hjust = 1, vjust = 1),
+        axis.text.y = element_text(size=8))+
   facet_wrap(~team)
 ggsave("batter_age_scatter_facet_teams.png")
 

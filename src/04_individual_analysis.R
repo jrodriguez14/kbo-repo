@@ -22,6 +22,8 @@ ggplot(runs_game,aes(x=year,y=runs_per_game))+
   labs(title = "Runs Per Game",
        subtitle = "by Year, by Team",
        x="Year",y="Runs")+
+  theme(axis.text.x = element_text(size = 8, angle = 60, hjust = 1, vjust = 1),
+        axis.text.y = element_text(size=8))+
   facet_wrap(~team)
 ggsave("runs_game_scatter_facet_teams.png")
 
